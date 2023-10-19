@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SignIn from './pages/SignIn';
-import SignUp from './pages/SignUp';
+import Register from './pages/Register';
 import Calendar from './pages/Calendar';
 import Chart from './pages/Chart';
 import Dashboard from './pages/Dashboard/Dashboard';
@@ -49,7 +49,7 @@ function App() {
         <Route path="/settings" element={<Settings />} />
         <Route path="/chart" element={<Chart />} />
         <Route path="/signin" element={<SignIn />} />
-        <Route path="/signup" element={<SignUp />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
       {/* </Router> */}
     </>

@@ -3,14 +3,14 @@ import { Link, useNavigate } from 'react-router-dom';
 import baseUrl from "../Config";
 
 
-const SignUp = () => {
+const Register = () => {
   const navigate = useNavigate();
   const [name, setName] = useState('')
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
-  const handleSignup = async (e) => {
+  const handleRegister = async (e) => {
     e.preventDefault();
 
     try {
@@ -52,7 +52,7 @@ const SignUp = () => {
               Sign Up to RateMyInstitute
             </h2>
 
-            <form onSubmit={handleSignup}>
+            <form onSubmit={handleRegister}>
               <div className="mb-4">
                 <label className="mb-2.5 block text-start font-medium text-black dark:text-white">
                   Name
@@ -117,4 +117,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default Register;
